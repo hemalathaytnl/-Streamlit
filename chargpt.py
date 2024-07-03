@@ -41,10 +41,10 @@ o	Write your Streamlit code in app.py.
 
 from openai import OpenAI
 import streamlit as st
-import requests
 
 
-api_key=st.secrets["open_key"]
+ openai_api_key=st.text_input("OpenAI API Key",key="chatbot_api_key",type="password")
+
 
 with st.sidebar:
     openai_api_key=st.text_input("OpenAI API Key",key="chatbot_api_key",type="password")
